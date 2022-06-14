@@ -1,0 +1,129 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.header {
+  background-color: #282c34;
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoIm {
+  height: 100%;
+  width: 20%;
+}
+
+.dateTime {
+  color: white;
+}
+
+.logoImg {
+  width: 100px;
+  height: 50px;
+  object-fit: fill;
+}
+
+.main {
+  background-color: black;
+  width: 100%;
+  height: 95vh;
+  display: flex;
+}
+
+.image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.equalContainers {
+  display: flex;
+  color: white;
+  width: 20%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* display: grid;
+  place-items: center; */
+  justify-content: center;
+  align-items: center;
+  font-size: 4vw;
+  font-family: 'Special Elite', cursive;
+}
+
+#first {
+  background-image: url(./assets/photo1.jpeg);
+}
+
+#second {
+  background-image: url(./assets/photo2.jpg);
+}
+
+#third {
+  background-image: url(./assets/photo3.jpeg);
+}
+
+#forth {
+  background-image: url(./assets/photo4.jpeg);
+}
+
+#fifth {
+  background-image: url(./assets/photo5.jpeg);
+}
+
+@media (max-width: 600px) {
+
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .equalContainers {
+    width: 100%;
+    height: 20%;
+    font-size: 5vh;
+  }
+
+  .dateTime {
+    display: none;
+  }
+}
